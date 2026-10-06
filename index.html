@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sameer Shameem — Digital Marketer, Performance Specialist &amp; Web Developer</title>
+<!-- Google Fonts: Syne & Space Grotesk & Geist -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim from Design Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#4edea3",
+            "error": "#ffb4ab",
+            "surface-container-low": "#1c1b1b",
+            "primary": "#ffffff",
+            "surface-container": "#201f1f",
+            "on-error-container": "#ffdad6",
+            "primary-fixed": "#e2e2e2",
+            "secondary-fixed": "#6ffbbe",
+            "tertiary": "#ffffff",
+            "surface-container-high": "#2a2a2a",
+            "on-secondary": "#003824",
+            "surface-container-highest": "#353534",
+            "on-error": "#690005",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-bright": "#3a3939",
+            "inverse-surface": "#e5e2e1",
+            "secondary": "#4edea3",
+            "on-primary-fixed": "#1a1c1c",
+            "on-primary-fixed-variant": "#454747",
+            "tertiary-fixed-dim": "#c7c6c6",
+            "on-tertiary-fixed": "#1b1c1c",
+            "error-container": "#93000a",
+            "inverse-primary": "#5d5f5f",
+            "background": "#131313",
+            "secondary-container": "#00a572",
+            "on-secondary-fixed-variant": "#005236",
+            "tertiary-fixed": "#e3e2e2",
+            "surface-tint": "#c6c6c7",
+            "on-tertiary-container": "#646464",
+            "on-tertiary-fixed-variant": "#464747",
+            "on-primary": "#2f3131",
+            "primary-container": "#e2e2e2",
+            "on-secondary-fixed": "#002113",
+            "surface": "#131313",
+            "primary-fixed-dim": "#c6c6c7",
+            "on-secondary-container": "#00311f",
+            "outline-variant": "#444748",
+            "surface-dim": "#131313",
+            "on-surface": "#e5e2e1",
+            "inverse-on-surface": "#313030",
+            "on-surface-variant": "#c4c7c8",
+            "on-tertiary": "#303031",
+            "on-background": "#e5e2e1",
+            "surface-variant": "#353534",
+            "on-primary-container": "#636565",
+            "outline": "#8e9192",
+            "tertiary-container": "#e3e2e2"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "1.25rem",
+            "space-sm": "0.75rem",
+            "margin-tablet": "2.5rem",
+            "gutter-desktop": "2.5rem",
+            "gutter": "1.5rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.375rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": ["Syne"],
+            "body-md": ["Geist"],
+            "body-xl": ["Geist"],
+            "display-hero": ["Syne"],
+            "headline-lg-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "label-badge": ["Space Grotesk"],
+            "headline-xl-mobile": ["Syne"],
+            "label-technical": ["Space Grotesk"],
+            "headline-lg": ["Syne"],
+            "headline-xl": ["Syne"],
+            "body-sm": ["Geist"]
+          },
+          "fontSize": {
+            "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-md": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-xl": ["20px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-hero": ["88px", { "lineHeight": "92px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-technical": ["13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-xl": ["60px", { "lineHeight": "68px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .stroke-text {
+      -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.7);
+      color: transparent;
+    }
+    @media (min-width: 768px) {
+      .stroke-text {
+        -webkit-text-stroke: 2px rgba(255, 255, 255, 0.85);
+      }
+    }
+    .grid-bg-subtle {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary selection:text-surface-container-lowest overflow-x-hidden font-body-md text-body-md">
+<!-- ================= TOP NAV BAR (Shared Component Execution) ================= -->
+<header class="sticky top-0 z-50 w-full bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-sm max-w-7xl mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-body-xl tracking-tighter uppercase font-bold text-primary dark:text-primary flex items-center gap-space-xs transition-all duration-200 ease-out active:scale-95" href="#">
+        SAMEER SHAMEEM
+      </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-primary dark:text-primary font-bold border-b border-secondary pb-1 text-label-technical uppercase tracking-wider transition-all duration-300" href="#work">Work</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-wider font-semibold hover:text-secondary hover:border-secondary-fixed-dim transition-all duration-300" href="#services">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-wider font-semibold hover:text-secondary hover:border-secondary-fixed-dim transition-all duration-300" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-wider font-semibold hover:text-secondary hover:border-secondary-fixed-dim transition-all duration-300" href="#experience">Experience</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-wider font-semibold hover:text-secondary hover:border-secondary-fixed-dim transition-all duration-300" href="#contact">Contact</a>
+</nav>
+<!-- Status Pill & Action Button -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden lg:flex items-center gap-2 px-3 py-1 bg-surface-container border border-secondary/20 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary">Available for New Projects</span>
+</div>
+<a class="px-4 py-2 bg-primary text-surface-container-lowest font-label-technical text-label-technical uppercase font-bold rounded-lg hover:bg-surface-container-lowest hover:text-primary hover:border hover:border-primary transition-all duration-200 ease-out active:scale-95" href="#contact">
+          Let's Talk ↗
+        </a>
+</div>
+</div>
+</header>
+<main>
+<!-- ================= HERO SECTION ================= -->
+<section class="relative min-h-[90vh] flex flex-col justify-center px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto grid-bg-subtle border-b border-outline-variant/20">
+<!-- Ambient Badge Row -->
+<div class="flex flex-wrap items-center gap-3 mb-space-md">
+<span class="px-2.5 py-1 bg-surface-container border border-outline-variant/30 text-secondary font-label-technical text-label-technical uppercase tracking-widest rounded-lg">
+          2.5+ Years Field Experience
+        </span>
+<span class="text-outline font-label-technical text-label-technical">/</span>
+<span class="text-on-surface-variant font-label-technical text-label-technical tracking-wide uppercase">
+          Performance · Web · Content · Growth
+        </span>
+</div>
+<!-- Monumental Headline Layout -->
+<div class="relative z-10 space-y-1 mb-space-lg">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary tracking-tighter leading-none uppercase">
+          I BUILD <span class="stroke-text">DIGITAL</span>
+</h1>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary tracking-tighter leading-none uppercase flex flex-wrap items-baseline gap-4">
+<span>GROWTH.</span>
+<span class="text-secondary font-headline-md text-headline-md tracking-normal hidden lg:inline-block">
+            [STRATEGY × SCALE]
+          </span>
+</h1>
+</div>
+<!-- Split Deck: Subtitle & Live Dynamic Widget -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-7 space-y-space-md">
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-2xl leading-relaxed">
+            Digital marketer, performance strategist, web developer and content creator helping ambitious brands turn fragmented attention into measurable, scalable revenue.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-6 py-3.5 bg-primary text-surface-container-lowest font-label-technical text-label-technical uppercase font-bold rounded-lg hover:bg-surface-container-lowest hover:text-primary hover:border hover:border-primary transition-all duration-200" href="#work">
+              View My Work ↗
+            </a>
+<a class="px-6 py-3.5 bg-surface-container-low text-primary border border-outline-variant/40 font-label-technical text-label-technical uppercase font-semibold rounded-lg hover:border-secondary hover:text-secondary transition-all duration-200" href="#contact">
+              Let's Work Together ↗
+            </a>
+</div>
+<div class="flex items-center gap-6 pt-4 text-on-surface-variant font-label-technical text-label-technical">
+<a class="hover:text-secondary flex items-center gap-1.5 transition-colors" href="tel:+918630941563">
+<span class="material-symbols-outlined text-base">call</span>
+              +91 8630941563
+            </a>
+<span>•</span>
+<a class="hover:text-secondary flex items-center gap-1.5 transition-colors" href="mailto:sameershameem86@gmail.com">
+<span class="material-symbols-outlined text-base">alternate_email</span>
+              sameershameem86@gmail.com
+            </a>
+</div>
+</div>
+<!-- Live Performance HUD Card -->
+<div class="lg:col-span-5 bg-surface-container-low border border-outline-variant/30 rounded-xl p-space-md shadow-2xl relative overflow-hidden backdrop-blur-md">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-primary">Live Growth Telemetry</span>
+</div>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">Q1 REALTIME</span>
+</div>
+<!-- Metrics Bento Grid -->
+<div class="grid grid-cols-3 gap-3 mb-4">
+<div class="bg-surface-container p-3 rounded-lg border border-outline-variant/10">
+<span class="block font-label-technical text-label-badge uppercase text-on-surface-variant mb-1">ROAS Lift</span>
+<span class="font-headline-md text-headline-md text-secondary tracking-tight">+184%</span>
+<span class="block text-[11px] text-outline mt-0.5">Paid Acquisition</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg border border-outline-variant/10">
+<span class="block font-label-technical text-label-badge uppercase text-on-surface-variant mb-1">CAC Reduction</span>
+<span class="font-headline-md text-headline-md text-primary tracking-tight">-42%</span>
+<span class="block text-[11px] text-outline mt-0.5">Efficiency Gain</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg border border-outline-variant/10">
+<span class="block font-label-technical text-label-badge uppercase text-on-surface-variant mb-1">Pipeline</span>
+<span class="font-headline-md text-headline-md text-secondary tracking-tight">4.8x</span>
+<span class="block text-[11px] text-outline mt-0.5">Inbound Volume</span>
+</div>
+</div>
+<!-- Micro Sparkline visualization -->
+<div class="bg-surface-container p-3 rounded-lg border border-outline-variant/10 flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="text-xs text-on-surface-variant uppercase font-label-technical">Execution Cadence</span>
+<p class="text-sm font-semibold text-primary">Audience &amp; Funnel Loop</p>
+</div>
+<div class="flex items-end gap-1 h-8">
+<span class="w-1.5 h-3 bg-secondary/40 rounded-t"></span>
+<span class="w-1.5 h-5 bg-secondary/60 rounded-t"></span>
+<span class="w-1.5 h-4 bg-secondary/50 rounded-t"></span>
+<span class="w-1.5 h-7 bg-secondary/80 rounded-t"></span>
+<span class="w-1.5 h-6 bg-secondary/70 rounded-t"></span>
+<span class="w-1.5 h-8 bg-secondary rounded-t"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= EDITORIAL STATEMENT & VALUE CYCLE ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block mb-2">/ PHILOSOPHICAL ANCHOR</span>
+<p class="text-on-surface-variant font-label-technical text-label-technical uppercase">2.5+ Years Multidisciplinary Synergy</p>
+</div>
+<div class="lg:col-span-8 space-y-space-md">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight leading-tight">
+            "I combine marketing, technology and creativity to build digital experiences that grow businesses."
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            Modern expansion requires more than isolated ad spends or standalone landing pages. True velocity is achieved when research informs creative strategy, code enforces high conversion velocity, and rigorous analytics continuously compound acquisition gains.
+          </p>
+<!-- The 8-Step Synergistic Growth Cycle -->
+<div class="pt-space-md">
+<span class="block text-xs font-label-technical uppercase tracking-wider text-outline mb-3">The Continuous Growth Loop</span>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-primary border border-outline-variant/20">01 Research</span>
+<span class="text-outline">→</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-primary border border-outline-variant/20">02 Strategy</span>
+<span class="text-outline">→</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-primary border border-outline-variant/20">03 Content</span>
+<span class="text-outline">→</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-primary border border-outline-variant/20">04 Advertising</span>
+<span class="text-outline">→</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-primary border border-outline-variant/20">05 Website</span>
+<span class="text-outline">→</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-primary border border-outline-variant/20">06 Conversion</span>
+<span class="text-outline">→</span>
+<span class="px-3 py-1.5 bg-surface-container rounded font-label-technical text-xs text-secondary border border-secondary/30 font-bold">07 Growth</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SELECTED WORK / CASE STUDIES ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20" id="work">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+<div>
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block mb-2">/ SELECTED WORK</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+            Selected projects, campaigns and digital experiences.
+          </h2>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1.5 bg-surface-container-low p-1.5 rounded-lg border border-outline-variant/30 custom-scrollbar overflow-x-auto">
+<button class="filter-btn px-3 py-1.5 rounded text-xs font-label-technical uppercase tracking-wider bg-primary text-surface-container-lowest font-bold transition-all" id="btn-all" onclick="filterWork('all')">All</button>
+<button class="filter-btn px-3 py-1.5 rounded text-xs font-label-technical uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" id="btn-performance" onclick="filterWork('performance')">Performance</button>
+<button class="filter-btn px-3 py-1.5 rounded text-xs font-label-technical uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" id="btn-web" onclick="filterWork('web')">Web</button>
+<button class="filter-btn px-3 py-1.5 rounded text-xs font-label-technical uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" id="btn-content" onclick="filterWork('content')">Content</button>
+<button class="filter-btn px-3 py-1.5 rounded text-xs font-label-technical uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" id="btn-growth" onclick="filterWork('growth')">Growth</button>
+</div>
+</div>
+<!-- Asymmetrical Bento Work Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="projects-grid">
+<!-- Project 01: Performance Marketing -->
+<div class="project-card group bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden hover:border-secondary/50 transition-all duration-300" data-category="performance">
+<div class="p-space-lg flex flex-col justify-between h-full space-y-6">
+<div>
+<div class="flex items-center justify-between text-outline font-label-technical text-xs uppercase mb-3">
+<span>01 — PERFORMANCE MARKETING</span>
+<span class="text-secondary font-bold">Meta &amp; Google Ads</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                Scaling Paid Acquisition
+              </h3>
+<p class="text-body-sm text-on-surface-variant mt-2">
+                Engineered a segmented full-funnel acquisition structure using algorithmic bidding and hyper-targeted UGC creatives for a high-growth brand.
+              </p>
+</div>
+<!-- Impact Metrics Block -->
+<div class="grid grid-cols-3 gap-2 py-4 border-y border-outline-variant/20 bg-surface-container/40 px-3 rounded">
+<div>
+<span class="block text-secondary font-headline-md text-headline-md font-bold">+240%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">ROAS Gain</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">-38%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Target CPA</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">+165%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Conversions</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Meta Ads</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Google Ads</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">GA4</span>
+</div>
+<a class="font-label-technical text-xs font-bold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#contact">
+                View Case Study ↗
+              </a>
+</div>
+</div>
+</div>
+<!-- Project 02: Web Development -->
+<div class="project-card group bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden hover:border-secondary/50 transition-all duration-300" data-category="web">
+<div class="p-space-lg flex flex-col justify-between h-full space-y-6">
+<div>
+<div class="flex items-center justify-between text-outline font-label-technical text-xs uppercase mb-3">
+<span>02 — WEB DEVELOPMENT</span>
+<span class="text-secondary font-bold">Custom Architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                Conversion-Focused Website
+              </h3>
+<p class="text-body-sm text-on-surface-variant mt-2">
+                Architected high-speed, modern responsive interface optimized for ultra-low load latency, friction-free checkout flows, and SEO readiness.
+              </p>
+</div>
+<!-- Impact Metrics Block -->
+<div class="grid grid-cols-3 gap-2 py-4 border-y border-outline-variant/20 bg-surface-container/40 px-3 rounded">
+<div>
+<span class="block text-secondary font-headline-md text-headline-md font-bold">+94%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Conversion Rate</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">0.8s</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Load Speed</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">+180%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Engagement</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Modern JS</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Tailwind CSS</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Webflow</span>
+</div>
+<a class="font-label-technical text-xs font-bold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#contact">
+                View Case Study ↗
+              </a>
+</div>
+</div>
+</div>
+<!-- Project 03: Content Creation -->
+<div class="project-card group bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden hover:border-secondary/50 transition-all duration-300" data-category="content">
+<div class="p-space-lg flex flex-col justify-between h-full space-y-6">
+<div>
+<div class="flex items-center justify-between text-outline font-label-technical text-xs uppercase mb-3">
+<span>03 — CONTENT CREATION</span>
+<span class="text-secondary font-bold">Creative Directing</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                Content That Builds Attention
+              </h3>
+<p class="text-body-sm text-on-surface-variant mt-2">
+                Curated and produced short-form narrative videos, technical carousels, and high-retention social assets transforming passive impressions into active followers.
+              </p>
+</div>
+<!-- Impact Metrics Block -->
+<div class="grid grid-cols-3 gap-2 py-4 border-y border-outline-variant/20 bg-surface-container/40 px-3 rounded">
+<div>
+<span class="block text-secondary font-headline-md text-headline-md font-bold">2.4M+</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Organic Reach</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">+310%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Share Rate</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">12.8%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Avg Engagement</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Short-Form</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">CapCut</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Premiere Pro</span>
+</div>
+<a class="font-label-technical text-xs font-bold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#contact">
+                View Case Study ↗
+              </a>
+</div>
+</div>
+</div>
+<!-- Project 04: Growth Strategy -->
+<div class="project-card group bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden hover:border-secondary/50 transition-all duration-300" data-category="growth">
+<div class="p-space-lg flex flex-col justify-between h-full space-y-6">
+<div>
+<div class="flex items-center justify-between text-outline font-label-technical text-xs uppercase mb-3">
+<span>04 — GROWTH STRATEGY</span>
+<span class="text-secondary font-bold">Full Lifecycle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                Digital Growth System
+              </h3>
+<p class="text-body-sm text-on-surface-variant mt-2">
+                Built an integrated tracking &amp; retention architecture leveraging automated email workflows, customer segmentation, and continuous CRO tests.
+              </p>
+</div>
+<!-- Impact Metrics Block -->
+<div class="grid grid-cols-3 gap-2 py-4 border-y border-outline-variant/20 bg-surface-container/40 px-3 rounded">
+<div>
+<span class="block text-secondary font-headline-md text-headline-md font-bold">+215%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">MRR Expansion</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">+85%</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">Qualified Leads</span>
+</div>
+<div>
+<span class="block text-primary font-headline-md text-headline-md font-bold">3.2x</span>
+<span class="font-label-technical text-[11px] text-outline uppercase">LTV to CAC</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex gap-2">
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">A/B Testing</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Funnels</span>
+<span class="px-2 py-0.5 bg-surface-container text-[11px] font-label-badge text-on-surface-variant rounded">Retention</span>
+</div>
+<a class="font-label-technical text-xs font-bold text-primary group-hover:text-secondary flex items-center gap-1 transition-colors" href="#contact">
+                View Case Study ↗
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SERVICES (Expandable Editorial Accordion Rows) ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20" id="services">
+<div class="mb-space-lg max-w-2xl">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block mb-2">/ SERVICES</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+          From strategy to execution, I help businesses build and scale their digital presence.
+        </h2>
+</div>
+<!-- Accordion Rows Container -->
+<div class="divide-y divide-outline-variant/25 border-y border-outline-variant/25">
+<!-- Accordion 01 -->
+<div class="accordion-item py-6 transition-all cursor-pointer group" onclick="toggleAccordion(1)">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-6 md:gap-12">
+<span class="font-label-technical text-label-technical text-outline group-hover:text-secondary">01</span>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                DIGITAL MARKETING
+              </h3>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-label-technical text-xs text-on-surface-variant">Strategy &amp; Channels</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300" id="icon-1">expand_more</span>
+</div>
+</div>
+<div class="accordion-content hidden pt-4 pl-12 md:pl-20 text-on-surface-variant" id="content-1">
+<p class="max-w-3xl font-body-md text-body-md mb-4">
+              Holistic digital positioning, omni-channel roadmap construction, audience segmentation, and performance-led channel architecture mapped directly to commercial goals.
+            </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Strategic Planning</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Brand Positioning</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Market Research</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Omnichannel Synergy</span>
+</div>
+</div>
+</div>
+<!-- Accordion 02 -->
+<div class="accordion-item py-6 transition-all cursor-pointer group" onclick="toggleAccordion(2)">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-6 md:gap-12">
+<span class="font-label-technical text-label-technical text-outline group-hover:text-secondary">02</span>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                PERFORMANCE MARKETING
+              </h3>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-label-technical text-xs text-on-surface-variant">Paid Media Acquisition</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300" id="icon-2">expand_more</span>
+</div>
+</div>
+<div class="accordion-content hidden pt-4 pl-12 md:pl-20 text-on-surface-variant" id="content-2">
+<p class="max-w-3xl font-body-md text-body-md mb-4">
+              Full lifecycle paid acquisition across Meta Ads, Google Ads (Search &amp; Performance Max), algorithmic targeting, dynamic retargeting, and rigorous day-to-day CPA and ROAS optimization.
+            </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Meta Ads Manager</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Google Performance Max</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Target CPA Architecture</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Ad Creative Testing</span>
+</div>
+</div>
+</div>
+<!-- Accordion 03 -->
+<div class="accordion-item py-6 transition-all cursor-pointer group" onclick="toggleAccordion(3)">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-6 md:gap-12">
+<span class="font-label-technical text-label-technical text-outline group-hover:text-secondary">03</span>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                WEB DEVELOPMENT
+              </h3>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-label-technical text-xs text-on-surface-variant">High-Converting Interfaces</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300" id="icon-3">expand_more</span>
+</div>
+</div>
+<div class="accordion-content hidden pt-4 pl-12 md:pl-20 text-on-surface-variant" id="content-3">
+<p class="max-w-3xl font-body-md text-body-md mb-4">
+              Building ultra-fast, responsive web experiences and landing pages tailored specifically for high conversion rates, modern web standards, and flawless technical SEO.
+            </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">HTML5 / Tailwind CSS</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Modern JavaScript</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">WordPress &amp; Webflow</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Frictionless UX/UI</span>
+</div>
+</div>
+</div>
+<!-- Accordion 04 -->
+<div class="accordion-item py-6 transition-all cursor-pointer group" onclick="toggleAccordion(4)">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-6 md:gap-12">
+<span class="font-label-technical text-label-technical text-outline group-hover:text-secondary">04</span>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                CONTENT CREATION
+              </h3>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-label-technical text-xs text-on-surface-variant">Storytelling &amp; Video</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300" id="icon-4">expand_more</span>
+</div>
+</div>
+<div class="accordion-content hidden pt-4 pl-12 md:pl-20 text-on-surface-variant" id="content-4">
+<p class="max-w-3xl font-body-md text-body-md mb-4">
+              Directing and delivering content that captures market attention: high-retention short-form video editing, scroll-stopping social ad hooks, and cohesive digital brand assets.
+            </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Short-Form Video Production</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Adobe Premiere &amp; CapCut</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Creative Copywriting</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Social Content Systems</span>
+</div>
+</div>
+</div>
+<!-- Accordion 05 -->
+<div class="accordion-item py-6 transition-all cursor-pointer group" onclick="toggleAccordion(5)">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-6 md:gap-12">
+<span class="font-label-technical text-label-technical text-outline group-hover:text-secondary">05</span>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors">
+                GROWTH STRATEGY
+              </h3>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-label-technical text-xs text-on-surface-variant">Experimentation &amp; Funnels</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-transform duration-300" id="icon-5">expand_more</span>
+</div>
+</div>
+<div class="accordion-content hidden pt-4 pl-12 md:pl-20 text-on-surface-variant" id="content-5">
+<p class="max-w-3xl font-body-md text-body-md mb-4">
+              End-to-end funnel optimization, continuous A/B experimentation, qualitative feedback loops, and customer acquisition telemetry designed for sustainable exponential scale.
+            </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Conversion Rate Optimization</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Full Funnel Analytics</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Lead Scoring Automation</span>
+<span class="px-2.5 py-1 bg-surface-container rounded text-xs font-label-badge text-primary border border-outline-variant/30">Retention Engineering</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= HOW I WORK (Process Journey) ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20">
+<div class="mb-space-lg">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block mb-2">/ HOW I WORK</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+          A disciplined, battle-tested operational journey.
+        </h2>
+</div>
+<!-- 6-step Journey Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/20 hover:border-outline transition-colors">
+<span class="font-headline-md text-headline-md text-outline block mb-3">01</span>
+<h4 class="font-headline-md text-xl text-primary mb-2 uppercase">DISCOVER</h4>
+<p class="text-body-sm text-on-surface-variant">Deep audit of your current channels, audience cohorts, competitive benchmarks, and technical conversion leaks.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/20 hover:border-outline transition-colors">
+<span class="font-headline-md text-headline-md text-outline block mb-3">02</span>
+<h4 class="font-headline-md text-xl text-primary mb-2 uppercase">STRATEGIZE</h4>
+<p class="text-body-sm text-on-surface-variant">Drafting the high-conviction roadmap: positioning, media budget allocation, messaging hierarchy, and technical tool stacks.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/20 hover:border-outline transition-colors">
+<span class="font-headline-md text-headline-md text-outline block mb-3">03</span>
+<h4 class="font-headline-md text-xl text-primary mb-2 uppercase">CREATE</h4>
+<p class="text-body-sm text-on-surface-variant">Production of high-velocity creative hooks, video assets, responsive landing pages, and campaign architectures.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/20 hover:border-outline transition-colors">
+<span class="font-headline-md text-headline-md text-outline block mb-3">04</span>
+<h4 class="font-headline-md text-xl text-primary mb-2 uppercase">LAUNCH</h4>
+<p class="text-body-sm text-on-surface-variant">Controlled deployment of paid acquisition, live web deployment, tracking validation, and baseline benchmark establishment.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/20 hover:border-outline transition-colors">
+<span class="font-headline-md text-headline-md text-outline block mb-3">05</span>
+<h4 class="font-headline-md text-xl text-primary mb-2 uppercase">OPTIMIZE</h4>
+<p class="text-body-sm text-on-surface-variant">Continuous multivariate A/B testing of creative copy, landing page friction reduction, and paid bid refinement.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/20 hover:border-secondary transition-colors">
+<span class="font-headline-md text-headline-md text-secondary block mb-3">06</span>
+<h4 class="font-headline-md text-xl text-secondary mb-2 uppercase">SCALE</h4>
+<p class="text-body-sm text-on-surface-variant">Expanding ad spend efficiently across verified winners, expanding retention loops, and accelerating total monthly revenue.</p>
+</div>
+</div>
+</section>
+<!-- ================= GROWTH PHILOSOPHY (Bold Showcase) ================= -->
+<section class="bg-surface-container-lowest py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop border-b border-outline-variant/20">
+<div class="max-w-5xl mx-auto text-center space-y-space-md">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest inline-block">
+          / THE NORTH STAR PHILOSOPHY
+        </span>
+<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary tracking-tight leading-tight">
+          "GOOD MARKETING GETS ATTENTION. GREAT MARKETING CREATES GROWTH."
+        </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+          I don't believe in creating digital work just to look good. Every campaign, website, piece of content and growth experiment must have a distinct purpose, a measurable baseline, and a direct line to bottom-line results.
+        </p>
+</div>
+</section>
+<!-- ================= EXPERIENCE & TIMELINE ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20" id="experience">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-5">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block mb-2">/ EXPERIENCE</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight mb-4">
+            2.5+ YEARS OF TESTED EXPERIENCE
+          </h2>
+<p class="text-body-md text-on-surface-variant max-w-md">
+            A continuous progression focused on the intersection of media acquisition, code architecture, and high-impact digital storytelling.
+          </p>
+</div>
+<div class="lg:col-span-7 space-y-6">
+<!-- Experience Card 1 -->
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/20 hover:border-outline-variant/60 transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="font-label-technical text-xs text-secondary font-bold">2024 — PRESENT</span>
+<span class="font-label-badge text-xs uppercase px-2 py-0.5 bg-surface-container text-on-surface-variant rounded">Full-Funnel Growth</span>
+</div>
+<h3 class="font-headline-md text-xl text-primary font-bold">
+              Digital Marketing &amp; Growth · Senior Growth Strategist
+            </h3>
+<p class="text-body-sm text-outline mt-1 mb-3">Independent Consultant &amp; Strategic Engagements</p>
+<p class="text-body-sm text-on-surface-variant">
+              Leading complete customer acquisition funnels, combining Google Ads, Meta Ads, and bespoke landing pages to scale key revenue KPIs for selected commercial brands.
+            </p>
+</div>
+<!-- Experience Card 2 -->
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/20 hover:border-outline-variant/60 transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="font-label-technical text-xs text-secondary font-bold">2023 — 2024</span>
+<span class="font-label-badge text-xs uppercase px-2 py-0.5 bg-surface-container text-on-surface-variant rounded">Paid Acquisition</span>
+</div>
+<h3 class="font-headline-md text-xl text-primary font-bold">
+              Performance Marketing · Paid Media Specialist
+            </h3>
+<p class="text-body-sm text-outline mt-1 mb-3">Agency &amp; Growth Partner Engagements</p>
+<p class="text-body-sm text-on-surface-variant">
+              Managed multiple monthly ad spend portfolios across diverse verticals. Conducted rigorous split tests on hooks, landing page layouts, and audience cohorts.
+            </p>
+</div>
+<!-- Experience Card 3 -->
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/20 hover:border-outline-variant/60 transition-all">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="font-label-technical text-xs text-secondary font-bold">2023</span>
+<span class="font-label-badge text-xs uppercase px-2 py-0.5 bg-surface-container text-on-surface-variant rounded">Interface &amp; Creative</span>
+</div>
+<h3 class="font-headline-md text-xl text-primary font-bold">
+              Web Development &amp; Content · Full-Stack &amp; Creative Specialist
+            </h3>
+<p class="text-body-sm text-outline mt-1 mb-3">Client Execution &amp; Digital Projects</p>
+<p class="text-body-sm text-on-surface-variant">
+              Built responsive, high-performing websites and designed high-retention social assets, connecting graphic design aesthetics with functional web code.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= TOOLKIT & EXPERTISE ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20">
+<div class="mb-space-lg">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block mb-2">/ TOOLKIT</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+          Tools, platforms and frameworks I execute with.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-2 mb-4 text-secondary">
+<span class="material-symbols-outlined">campaign</span>
+<h4 class="font-label-technical text-label-technical uppercase tracking-wider text-primary">MARKETING</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Google Ads</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Meta Ads</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">GA4</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Tag Manager</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Search Console</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Looker Studio</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-2 mb-4 text-secondary">
+<span class="material-symbols-outlined">code</span>
+<h4 class="font-label-technical text-label-technical uppercase tracking-wider text-primary">WEB</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">HTML5</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">CSS3</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">JavaScript</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">WordPress</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Webflow</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Framer</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-2 mb-4 text-secondary">
+<span class="material-symbols-outlined">movie_edit</span>
+<h4 class="font-label-technical text-label-technical uppercase tracking-wider text-primary">CONTENT</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Adobe CC</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Premiere Pro</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">After Effects</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">CapCut</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Canva</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Figma</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-2 mb-4 text-secondary">
+<span class="material-symbols-outlined">query_stats</span>
+<h4 class="font-label-technical text-label-technical uppercase tracking-wider text-primary">GROWTH</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">A/B Testing</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Conversion Opt</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Funnel Analytics</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Technical SEO</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Email Workflows</span>
+<span class="px-2.5 py-1 bg-surface-container text-xs font-label-technical text-on-surface rounded border border-outline-variant/20">Attribution Models</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ABOUT ME SECTION ================= -->
+<section class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl max-w-7xl mx-auto border-b border-outline-variant/20" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Cutout Image Presentation -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/30 flex items-end justify-center">
+<!-- Subtle gradient backdrop -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent z-10"></div>
+<!-- Portrait Image Asset -->
+<img alt="Cutout portrait of Sameer Shameem" class="relative z-0 object-contain w-full h-full scale-105 group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA1Q0jUv0vt6SILqjOry9uTxjmyTWu9ZzuyPlfLzv-DLzSsw3ZKlIJZbXixd87UXcHjxB5V6yRyHuE23BFnk1E_TjYpPrnWEn9vnLssI1OXIsSyjvAgf5PjeSWbZ-eRqlaiNnztQzqpw8cnV1XmhkFkpP6pWvQ-kNNQ1DorEi5k05fZrvGJYmF4iFjh4MLyGbsyPqxp6xBA_A4XYemG4hhCjvT58BTnPh75Y4kb2rW"/>
+<!-- Floating Credential Badge -->
+<div class="absolute bottom-4 left-4 right-4 z-20 bg-surface/90 backdrop-blur-md p-3 rounded-lg border border-outline-variant/40 flex items-center justify-between">
+<div>
+<span class="block font-label-technical text-xs font-bold text-primary">SAMEER SHAMEEM</span>
+<span class="text-[11px] text-on-surface-variant font-label-technical">Growth Architect &amp; Developer</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+</div>
+<!-- Bio & Editorial Content -->
+<div class="lg:col-span-7 space-y-space-md">
+<span class="text-secondary font-label-technical text-label-technical uppercase tracking-widest block">/ ABOUT ME</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+            Architecting impact across the entire digital value chain.
+          </h2>
+<div class="space-y-4 text-on-surface-variant font-body-md text-body-md">
+<p>
+              I am a digital strategist and developer driven by a single conviction: true digital impact lives at the convergence of data-backed marketing, razor-sharp visual content, and flawless technical web execution.
+            </p>
+<p>
+              With over 2.5 years of continuous hands-on experience, I don't operate in departmental silos. When we design a campaign, I analyze the ad algorithm, structure the code for maximum speed and conversion, and calibrate the creative narrative to capture authentic user intent.
+            </p>
+</div>
+<!-- Numbers / Stats Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-outline-variant/20">
+<div>
+<span class="block font-headline-md text-headline-md text-primary font-bold">2.5+</span>
+<span class="font-label-technical text-xs text-outline uppercase">Years Experience</span>
+</div>
+<div>
+<span class="block font-headline-md text-headline-md text-secondary font-bold">40+</span>
+<span class="font-label-technical text-xs text-outline uppercase">Projects Executed</span>
+</div>
+<div>
+<span class="block font-headline-md text-headline-md text-primary font-bold">15+</span>
+<span class="font-label-technical text-xs text-outline uppercase">Campaigns Scaled</span>
+</div>
+<div>
+<span class="block font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-label-technical text-xs text-outline uppercase">Commitment</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CONTACT / CTA SECTION ================= -->
+<section class="bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl border-b border-outline-variant/20 relative overflow-hidden" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-secondary font-label-badge text-label-badge uppercase tracking-widest">
+            Available for New Projects &amp; Growth Consultations
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<div class="lg:col-span-8">
+<h2 class="font-headline-xl-mobile md:font-display-hero text-headline-xl-mobile md:text-display-hero text-primary tracking-tighter uppercase leading-none">
+              LET'S BUILD SOMETHING THAT GROWS.
+            </h2>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end space-y-4">
+<p class="text-on-surface-variant font-body-md text-body-md">
+              Whether you need to scale paid acquisition, engineer a high-converting web platform, or overhaul your brand narrative, my calendar is open for high-conviction partnerships.
+            </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-4 bg-primary text-surface-container-lowest font-label-technical text-label-technical uppercase font-bold rounded-lg hover:bg-secondary hover:text-surface-container-lowest transition-all duration-200" href="mailto:sameershameem86@gmail.com">
+                Start a Conversation ↗
+              </a>
+</div>
+</div>
+</div>
+<!-- Direct Contact Channels Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-space-lg border-t border-outline-variant/20">
+<a class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group" href="tel:+918630941563">
+<span class="font-label-technical text-xs text-outline uppercase block mb-1">Direct Phone</span>
+<p class="font-headline-md text-xl text-primary group-hover:text-secondary transition-colors font-bold">+91 8630941563</p>
+<span class="text-xs text-on-surface-variant mt-2 block font-label-technical">Click to place direct call ↗</span>
+</a>
+<a class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group" href="mailto:sameershameem86@gmail.com">
+<span class="font-label-technical text-xs text-outline uppercase block mb-1">Primary Email</span>
+<p class="font-headline-md text-xl text-primary group-hover:text-secondary transition-colors font-bold">sameershameem86@gmail.com</p>
+<span class="text-xs text-on-surface-variant mt-2 block font-label-technical">Direct inbox delivery ↗</span>
+</a>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30">
+<span class="font-label-technical text-xs text-outline uppercase block mb-1">Location &amp; Availability</span>
+<p class="font-headline-md text-xl text-primary font-bold">Remote / Worldwide</p>
+<span class="text-xs text-secondary mt-2 block font-label-technical">IST (UTC+5:30) Active Hours</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component Minimal Editorial) ================= -->
+<footer class="docked full-width bottom bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 dark:border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg max-w-7xl mx-auto gap-space-md">
+<!-- Identity & Copyright exact string match from JSON -->
+<div class="space-y-1 text-center md:text-left">
+<a class="font-headline-md text-body-xl tracking-tight uppercase font-bold text-primary dark:text-primary" href="#">
+          SAMEER SHAMEEM
+        </a>
+<p class="font-body-sm text-body-sm text-outline">
+          © 2025 SAMEER SHAMEEM. ALL RIGHTS RESERVED. ARCHITECTED FOR IMPACT.
+        </p>
+</div>
+<!-- Footer Quick Links matching Shared JSON links -->
+<div class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-widest font-semibold hover:text-secondary dark:hover:text-secondary transition-colors duration-200" href="#work">Work</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-widest font-semibold hover:text-secondary dark:hover:text-secondary transition-colors duration-200" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-widest font-semibold hover:text-secondary dark:hover:text-secondary transition-colors duration-200" href="https://twitter.com" rel="noopener noreferrer" target="_blank">Twitter / X</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-widest font-semibold hover:text-secondary dark:hover:text-secondary transition-colors duration-200" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-technical uppercase tracking-widest font-semibold hover:text-secondary dark:hover:text-secondary transition-colors duration-200" href="mailto:sameershameem86@gmail.com">Email</a>
+<a class="text-primary dark:text-primary font-medium text-label-technical uppercase tracking-widest hover:text-secondary transition-colors duration-200" href="#">Back to Top ↑</a>
+</div>
+</div>
+</footer>
+<!-- ================= CLIENT INTERACTIONS SCRIPT ================= -->
+<script>
+    // Tab Filtering Logic for Portfolio Projects
+    function filterWork(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update button styling
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-surface-container-lowest', 'font-bold');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      const activeBtn = document.getElementById('btn-' + category);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-primary', 'text-surface-container-lowest', 'font-bold');
+        activeBtn.classList.remove('text-on-surface-variant');
+      }
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Accordion Expansion Logic
+    function toggleAccordion(id) {
+      const content = document.getElementById('content-' + id);
+      const icon = document.getElementById('icon-' + id);
+      
+      const isExpanded = !content.classList.contains('hidden');
+
+      // Close all accordions first for clean editorial feel
+      for (let i = 1; i <= 5; i++) {
+        const c = document.getElementById('content-' + i);
+        const ic = document.getElementById('icon-' + i);
+        if (c && ic) {
+          c.classList.add('hidden');
+          ic.textContent = 'expand_more';
+        }
+      }
+
+      // Toggle requested one
+      if (!isExpanded) {
+        content.classList.remove('hidden');
+        icon.textContent = 'expand_less';
+      }
+    }
+  </script>
+</body></html>
